@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tehseen</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <!-- Dark Mode Toggle (Chatbot ke opar) -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-checkbox">
+        <label for="dark-mode-checkbox" class="dark-mode-label">
+            <i class='bx bx-sun'></i>
+            <i class='bx bx-moon'></i>
+            <span class="dark-mode-ball"></span>
+        </label>
+    </div>
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Tehseen | Portfolio</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- HOME SECTION -->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Hi,<br>
+                    I'am <span class="home__title-color">Tehseen</span><br>
+                    <span id="home-role">Web Designer</span>
+                </h1>
+                <div class="home__buttons">
+                    <a href="#contact" class="button">Contact</a>
+                    <button id="download-cv-btn" class="button button-outline" style="border:none; font-family:inherit; font-size:inherit; cursor:pointer;">Download CV</button>
+                </div>
+            </div>
+            <div class="home__social">
+                <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://wa.me/923468664756" class="home__social-icon" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/pic.png" alt="">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">I'm Tehseen</h2>
+                    <p class="about__text">I am a passionate developer who loves turning ideas into real, functional websites and applications. I enjoy working with modern web technologies and continuously improving my skills. I focus on writing clean, efficient, and user-friendly code.</p>
+                    
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <h3 class="stat-number" data-count="10">0+</h3>
+                            <p class="stat-label">Projects Done</p>
+                        </div>
+                        <div class="about__stat">
+                            <h3 class="stat-number" data-count="2">0+</h3>
+                            <p class="stat-label">Years Exp</p>
+                        </div>
+                        <div class="about__stat">
+                            <h3 class="stat-number" data-count="20">0+</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div>
+                    
+                    <button id="explore-more-btn" class="button button-outline" style="margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Explore More <i class='bx bx-down-arrow-alt'></i>
+                    </button>
+                    
+                    <div id="more-content" class="more-content" style="display: none;">
+                        <div class="education-section">
+                            <h3 class="more-title"><i class='bx bxs-graduation'></i> Education</h3>
+                            <div class="education-timeline">
+                                <div class="education-item">
+                                    <div class="education-year">2020</div>
+                                    <div class="education-details">
+                                        <h4>Matriculation (Medical)</h4>
+                                        <p class="education-institute">The Educators School, Kasur</p>
+                                        <p class="education-marks">📊 Marks: 1084 / 1100 | 📈 Percentage: 98.5%</p>
+                                    </div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="education-year">2022</div>
+                                    <div class="education-details">
+                                        <h4>F.Sc (Medical)</h4>
+                                        <p class="education-institute">Punjab Group of Colleges, Kasur</p>
+                                        <p class="education-marks">📊 Marks: 900 / 1100 | 📈 Percentage: 81.8%</p>
+                                    </div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="education-year">2027</div>
+                                    <div class="education-details">
+                                        <h4>BS Computer Science</h4>
+                                        <p class="education-institute">University of Agriculture, Faisalabad</p>
+                                        <p class="education-marks">📊 CGPA: 3.5 / 4.0 | 📈 (2023-2027)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hobbies-section">
+                            <h3 class="more-title"><i class='bx bxs-heart'></i> Hobbies & Interests</h3>
+                            <div class="hobbies-container">
+                                <span class="hobby-tag"><i class='bx bx-code-alt'></i> Coding</span>
+                                <span class="hobby-tag"><i class='bx bx-cricket-ball'></i> Cricket</span>
+                                <span class="hobby-tag"><i class='bx bx-run'></i> Badminton</span>
+                                <span class="hobby-tag"><i class='bx bx-joystick'></i> Gaming</span>
+                                <span class="hobby-tag"><i class='bx bx-headphone'></i> Music</span>
+                                <span class="hobby-tag"><i class='bx bx-book-open'></i> Reading</span>
+                                <span class="hobby-tag"><i class='bx bx-camera'></i> Photography</span>
+                                <span class="hobby-tag"><i class='bx bx-coffee-togo'></i> Coffee Lover</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                   
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">          
+                <div>
+                    <h2 class="skills__subtitle">Professional Skills</h2>
+                    <p class="skills__text">Strong knowledge of HTML, CSS, and JavaScript for building responsive websites. Experience with modern frameworks and front-end development tools. Ability to write clean, efficient, and maintainable code.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
+                        <div><span class="skills__percentage">95%</span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                        <div><span class="skills__percentage">85%</span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
+                        <div><span class="skills__percentage">65%</span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">UX/UI</span>
+                        </div>
+                        <div class="skills__bar skills__ux"></div>
+                        <div><span class="skills__percentage">85%</span></div>
+                    </div>
+                </div>
+                <div>              
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section class="certifications section" id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications__container bd-grid">
+                <div class="certifications__card">
+                    <div class="certifications__icon"><i class='bx bxl-html5'></i></div>
+                    <h3 class="certifications__title">Responsive Web Design</h3>
+                    <p class="certifications__provider">freeCodeCamp</p>
+                    <div class="certifications__date">2024</div>
+                    <div class="certifications__hover"><span>View Certificate →</span></div>
+                </div>
+                <div class="certifications__card">
+                    <div class="certifications__icon"><i class='bx bxl-javascript'></i></div>
+                    <h3 class="certifications__title">JavaScript Algorithms</h3>
+                    <p class="certifications__provider">freeCodeCamp</p>
+                    <div class="certifications__date">2024</div>
+                    <div class="certifications__hover"><span>View Certificate →</span></div>
+                </div>
+                <div class="certifications__card">
+                    <div class="certifications__icon"><i class='bx bxs-paint'></i></div>
+                    <h3 class="certifications__title">UI/UX Design Fundamentals</h3>
+                    <p class="certifications__provider">Coursera</p>
+                    <div class="certifications__date">2023</div>
+                    <div class="certifications__hover"><span>View Certificate →</span></div>
+                </div>
+                <div class="certifications__card">
+                    <div class="certifications__icon"><i class='bx bx-code-alt'></i></div>
+                    <h3 class="certifications__title">Frontend Development</h3>
+                    <p class="certifications__provider">Meta (Coursera)</p>
+                    <div class="certifications__date">2024</div>
+                    <div class="certifications__hover"><span>View Certificate →</span></div>
+                </div>
+                <div class="certifications__card">
+                    <div class="certifications__icon"><i class='bx bx-git-branch'></i></div>
+                    <h3 class="certifications__title">Git & GitHub Mastery</h3>
+                    <p class="certifications__provider">Udemy</p>
+                    <div class="certifications__date">2023</div>
+                    <div class="certifications__hover"><span>View Certificate →</span></div>
+                </div>
+                <div class="certifications__card">
+                    <div class="certifications__icon"><i class='bx bx-search-alt'></i></div>
+                    <h3 class="certifications__title">SEO Fundamentals</h3>
+                    <p class="certifications__provider">Google</p>
+                    <div class="certifications__date">2024</div>
+                    <div class="certifications__hover"><span>View Certificate →</span></div>
+                </div>
+            </div>
+            <div class="certifications__view-all">
+                <button id="view-certificates-btn" class="button button-outline">View All Certificates</button>
+            </div>
+        </section>
+
+        <div id="certificate-modal" class="certificate-modal">
+            <div class="certificate-modal-content">
+                <div class="certificate-modal-header">
+                    <h2>My Certificates</h2>
+                    <span class="certificate-modal-close">&times;</span>
+                </div>
+                <div class="certificate-modal-body" id="certificate-modal-body"></div>
+            </div>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects__container bd-grid">
+                <a href="https://github.com/qasirtehseen23-lang?tab=repositories" class="projects__img">
+                    <img src="assets/img/code1.jpg" alt="Project 1">
+                    <div class="projects__overlay"><span>View Project →</span></div>
+                </a>
+                <a href="https://github.com/qasirtehseen23-lang?tab=repositories" class="projects__img">
+                    <img src="assets/img/code2.jpg" alt="Project 2">
+                    <div class="projects__overlay"><span>View Project →</span></div>
+                </a>
+                <a href="https://github.com/qasirtehseen23-lang?tab=repositories" class="projects__img">
+                    <img src="assets/img/code3.jpg" alt="Project 3">
+                    <div class="projects__overlay"><span>View Project →</span></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="contact__form">
+                    <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
+                    <textarea name="message" placeholder="Your Message" rows="10" class="contact__input" required></textarea>
+                    <input type="text" name="_gotcha" style="display:none">
+                    <button type="submit" class="contact__button button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">Media</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=100073628452641" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/tehseen.qaisar/?hl=en" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/MTehseen59990" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&copy; 2026 All rights reserved</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget minimized" id="chatbot-widget" style="display: none;">
+        <div class="chatbot-header" id="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h4>Tehseen AI</h4>
+                    <p>Ask me anything about my work!</p>
+                </div>
+            </div>
+            <button class="chatbot-minimize" id="chatbot-minimize">−</button>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot">
+                    <div class="message-content">👋 Hi there! I'm Tehseen's AI assistant.<br>Ask me anything or click a question below:</div>
+                </div>
+            </div>
+            <div class="chatbot-quick-buttons" id="chatbot-quick-buttons">
+                <button class="quick-btn" data-question="What are your skills?">💻 Skills</button>
+                <button class="quick-btn" data-question="What is your experience?">💼 Experience</button>
+                <button class="quick-btn" data-question="How to contact you?">📞 Contact</button>
+                <button class="quick-btn" data-question="Download CV">📄 Download CV</button>
+                <button class="quick-btn" data-question="What projects have you done?">🚀 Projects</button>
+                <button class="quick-btn" data-question="What certifications do you have?">📜 Certifications</button>
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Type your question..." autocomplete="off">
+                <button id="chatbot-send">📤</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="chatbot-float-btn" id="chatbot-float-btn">💬</button>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
