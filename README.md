@@ -1,14 +1,25 @@
-# Portfolio Responsive Complete
-## [Watch it on youtube](https://youtu.be/AKNvTxWOdKw)
-### Portfolio Responsive Complete
+# Tehseen's Portfolio
 
-- Responsive Personal Portfolio Website HTML CSS & JavaScript.
-- Contains animations when scrolling.
-- Smooth scrolling in each section.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+Welcome to my personal portfolio website! I'm **Tehseen**, a passionate web developer.
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/@Bedimcode)
+## 🌐 Live Demo
+[View My Portfolio](https://qasirtheseen23-lang.github.io/yours_portfolio/)
 
-![preview img](/preview.png)
+## ✨ Features
+- Responsive design (works on all devices)
+- Interactive AI chatbot
+- Projects showcase
+- Contact form with EmailJS
+- Dark mode toggle
+- Animated sections
 
+## 🛠️ Technologies Used
+- HTML5
+- CSS3 (with variables, animations, flexbox, grid)
+- JavaScript (ES6+)
+- Boxicons for icons
+- ScrollReveal for animations
+- EmailJS for contact form
+- jsPDF for CV download
+
+## 📁 Project Structure
